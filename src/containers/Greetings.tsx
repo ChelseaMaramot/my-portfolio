@@ -1,11 +1,19 @@
 import React from 'react'
 import { greetings } from '../data/portfolio'
+import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Greetings() {
   return (
     <div>
-      <h1 className='text-white'>{greetings.role}</h1>
-      <p className='text-white'>{greetings.description}</p>
+      <motion.h1
+          initial = {{color: "#fff"}}
+          animate = {{color: ["#8446E9", "#DEAD13", "#328845"]}}
+          transition = {{duration: 5, repeat: Infinity }}
+      >
+        {greetings.role}
+      </motion.h1>
+      <p>{greetings.description}</p>
     </div>
   )
 }

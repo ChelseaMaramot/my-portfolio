@@ -1,10 +1,11 @@
 import React from 'react'
 import Greetings from '../containers/Greetings'
 
-export default function Home() {
+export default function Home(){
   return (
-    <div className="bg-black">
+    <div>
       <Greetings></Greetings>
     </div>
   )
 }
+
