@@ -2,6 +2,7 @@ import React from 'react'
 import { greetings } from '../data/portfolio'
 import { motion } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter';
+import { Button, Container, Row, Col } from "reactstrap";
 
 export default function Greetings() {
   return (
@@ -14,6 +15,7 @@ export default function Greetings() {
         {greetings.role}
       </motion.h1>
       <p>{greetings.description}</p>
+      <Button><span>Contact Me</span></Button>
     </div>
   )
 }
