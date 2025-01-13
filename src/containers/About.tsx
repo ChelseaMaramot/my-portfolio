@@ -5,10 +5,11 @@ import { about } from '../data/portfolio'
 
 export default function About() {
   return (
-    <div>
+    <div className="overflow-hidden max-w-full">
         <motion.p
         animate = {{x:'-50%'}}
-        transition = {{repeat: Infinity, repeatType: "loop", duration: 10, ease:"linear"}}
+        transition = {{repeat: Infinity, repeatType: "loop", duration: 1, ease:"linear"}}
+        className='whitespace-nowrap'>
         >
             <span>✨ ABOUT</span>
             <span>✨ ABOUT</span>

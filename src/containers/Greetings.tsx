@@ -6,7 +6,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 export default function Greetings() {
   return (
-    <div>
+    <div >
       <motion.h1
           initial = {{color: "#fff"}}
           animate = {{color: ["#8446E9", "#DEAD13", "#328845"]}}
